@@ -1,0 +1,296 @@
+:root{
+    --main-color:#F7F7F7; 
+    --var-color:#444444;
+
+}
+.bodyHead{
+    background-image:url("./src/components/img/headBody.png") ;
+    display: flex;
+    height: 400px;
+    width: 100%;
+}
+.Head{
+    display: block;
+    color: var(--var-color);
+    padding-left: 404px;
+    margin-top: 140px;
+}
+.bodyHeadName{
+    text-align: center;
+    color: #444444;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.bodyHeadNameSub{
+    color: #333;
+    font-weight: 450;
+    white-space: pre;
+}
+.BodySecond{
+    width: 100%;
+    height: 100%;
+    background-color: #F7F7F7;
+}
+span{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #444444;
+    font-size:2.7rem;
+}
+span:hover{
+    cursor: text;
+}
+.BodyImage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-weight:400;
+    margin-top: 10px;
+}
+.BodyImage:hover{
+    cursor: pointer;
+}
+.BodyImage11{
+    width: 250px;
+    height: 167px;
+    margin-bottom: 33px;
+    background-image:url("./src/components/img/bodySecond2.jpg") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 280px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    flex-wrap: wrap;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.BodyImage12{
+    width: 250px;
+    height: 167px;
+    background-image:url("./src/components/img/bodySecond1.jpg") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    flex-wrap: wrap;
+    text-align: center;
+    position: relative;
+    padding-top: 30px;
+}
+.BodyImage13{
+    width: 540px;
+    height: 370px;
+    background-image:url("./src/components/img/bodySecond3.jpg") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.2rem;
+    margin-top: 10px;
+    flex-wrap: wrap;
+    text-align: center;
+    position: relative;
+  
+}
+.BodyImage14{
+    width: 250px;
+    height: 167px;
+    margin-bottom: 33px;
+    background-image:url("./src/components/img/bodySecond4.jpg") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    margin-left: 12px;
+    flex-wrap: wrap;
+    text-align: center;
+    position: relative;
+    padding-top: 30px;
+}
+.BodyImage15{
+    width: 250px;
+    height: 167px;
+    background-image:url("./src/components/img/bodySecond5.jpg") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    margin-left: 12px;
+    flex-wrap: wrap;
+    text-align: center;
+    position: relative;
+    padding-top: 30px;
+}
+p{
+    z-index: 1;
+}
+.namesmall1{
+    font-size: 0.8rem;
+    font-weight: 400;
+    padding-left: 10px;
+    padding-right: 10px;
+    animation-name: loading;
+    animation-duration: 0.4s;
+    animation-fill-mode: forwards;
+    position: relative;
+}
+@keyframes loading{
+   from{
+    top: 10px;
+   }
+   to{
+    top: 0px;
+   }
+}
+
+.namesmall2{
+    font-size: 0.8rem;
+    font-weight: 400;
+    padding-left: 10px;
+    padding-right: 10px;
+    animation-name: loading;
+    animation-duration: 0.4s;
+    animation-fill-mode: forwards;
+    position: relative;
+}
+.namesmall3{
+    font-weight: 400;
+    font-size: 0.8rem;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: absolute;
+    animation-name: font;
+    animation-duration: 0.2s;
+}
+@keyframes font{
+    from{
+        font-size: 1.1rem;
+        padding-left: 0px;
+        padding-right: 0px;
+    } 
+    to{
+        font-size: 0.8rem;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+}
+.namesmall4{
+    font-size: 0.8rem;
+    font-weight: 400;
+    padding-left: 10px;
+    padding-right: 10px;
+    animation-name: loading;
+    animation-duration: 0.4s;
+    animation-fill-mode: forwards;
+    position: relative;
+}
+.namesmall5{
+    font-size: 0.8rem;
+    font-weight: 400;
+    padding-left: 10px;
+    padding-right: 10px;
+    animation-name: loading;
+    animation-duration: 0.4s;
+    animation-fill-mode: forwards;
+    position: relative;
+}
+.BodyImageSquare{
+    border: 2px solid #fff;
+    width:600px;
+    height:400px;
+    transition: width 0.2s, height 0.2s;
+}
+.BodyImage13:hover .BodyImageSquare {
+  width:  470px;
+  height: 310px;
+}
+.hideNow{
+    display: none ;
+}
+.BodyImage15:hover .hideNow{
+    
+    display: block;
+}
+.BodyImage14:hover .hideNow{
+    display: block;
+}
+
+.BodyImage13:hover .hideNow{
+    display: block;
+}
+.BodyImage12:hover .hideNow{
+    display: block;
+}
+.BodyImage11:hover .hideNow{
+    display: block;
+}
+
+.BodyImage11:hover .blurBackgroud{
+    display: block;
+    position: absolute;
+    width:100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    backdrop-filter: brightness(60%);
+    z-index: 0;
+}
+.BodyImage12:hover .blurBackgroud{
+    display: block;
+    position: absolute;
+    width:100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    backdrop-filter: brightness(60%);
+    z-index: 0;
+}
+.BodyImage13:hover .blurBackgroud{
+    display: block;
+    position: absolute;
+    width:100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    backdrop-filter: brightness(60%);
+    z-index: 0;
+}
+.BodyImage14:hover .blurBackgroud{
+    display: block;
+    position: absolute;
+    width:100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    backdrop-filter: brightness(60%);
+    z-index: 0;
+}
+.BodyImage15:hover .blurBackgroud{
+    display: block;
+    position: absolute;
+    width:100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    backdrop-filter: brightness(60%);
+    z-index: 0;
+}
+.blurBackgroud{
+    display: none;
+}
