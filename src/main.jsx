@@ -9,9 +9,9 @@ import Body from './components/Body/Body.jsx';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
+
     <Body>
 
     </Body>
-    <App />
   </React.StrictMode>,
 )

@@ -84,6 +84,26 @@ function Body() {
             </div>
           </div>
         </div>
+        <div className="BodyThird">
+          <span>TESTIMONIALS</span>
+          <div className="bodySlider row">
+            <div className="imagePeopleText col-lg-6">
+              <div className="imagecontains">
+                  <div className="imagePeople"></div>  
+                  <span style={{marginLeft: "20px"}} className="text-info">A family and home away from home. The Place In Saigon team made us 
+              feel so welcome and we will greatly miss everyone as well as our wonderful
+              apartment.Definitely recommend Place In Saigon to 
+              anyone. Thanks so much to Bryan and the team for all of their hard 
+              work,continuous help and support.Most of all thank you for the fun 
+              and happy memories!! I hope to see you again soon!
+                  </span>
+              </div>
+            <div className="imagePeopleName col-lg-6">
+                   Kristi Heiser
+            </div>
+            </div>
+          </div>
+        </div>
       </div>
     </>
   );

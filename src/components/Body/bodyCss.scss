@@ -38,6 +38,7 @@ span{
     align-items: center;
     color: #444444;
     font-size:2.7rem;
+
 }
 span:hover{
     cursor: text;
@@ -60,7 +61,7 @@ span:hover{
     background-image:url("./src/components/img/bodySecond2.jpg") ;
     background-repeat: no-repeat;
     background-size: cover;
-    margin-left: 280px;
+    margin-left: 190px;
     position: relative;
     display: flex;
     justify-content: center;
@@ -77,7 +78,7 @@ span:hover{
     background-image:url("./src/components/img/bodySecond1.jpg") ;
     background-repeat: no-repeat;
     background-size: cover;
-    margin-left: 280px;
+    margin-left: 190px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -97,7 +98,7 @@ span:hover{
     justify-content: center;
     align-items: center;
     font-size: 2.2rem;
-    margin-top: 10px;
+    margin-top: 4px;
     flex-wrap: wrap;
     text-align: center;
     position: relative;
@@ -114,7 +115,7 @@ span:hover{
     justify-content: center;
     align-items: center;
     font-size: 1.5rem;
-    margin-left: 12px;
+    margin-left: 100px;
     flex-wrap: wrap;
     text-align: center;
     position: relative;
@@ -130,7 +131,7 @@ span:hover{
     justify-content: center;
     align-items: center;
     font-size: 1.5rem;
-    margin-left: 12px;
+    margin-left: 100px;
     flex-wrap: wrap;
     text-align: center;
     position: relative;
@@ -293,4 +294,75 @@ p{
 }
 .blurBackgroud{
     display: none;
+}
+.BodyThird span{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #444444;
+    font-size:2.7rem;
+
+}
+.bodySlider{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.imagecontains{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.imagePeople{
+    background-image: url("./src/components/img/testimonials-1.jpg");
+    width: 120px;
+    height: 120px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 70px;
+}
+.imagePeopleText span{
+    display: flex;
+    font-size: 1rem;
+    width: 490px;
+    height: 180px;
+    background-color: #F6F7F8;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    margin-left: 20px;
+    padding:0 20px;
+    text-align: justify;
+    
+}
+.imagePeopleName{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 40px; 
+}
+
+.text-info{
+    position: relative;
+    color: #333 !important;
+}
+
+.text-info::before{
+    content: "";
+    position: absolute;
+    width: 0; 
+    height: 0; 
+    top: 10%;
+    left: -2%;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right:10px solid #F6F7F8; 
 }
