@@ -43,6 +43,7 @@ span{
 span:hover{
     cursor: text;
 }
+//body second
 .BodyImage{
     display: flex;
     justify-content: center;
@@ -295,6 +296,7 @@ p{
 .blurBackgroud{
     display: none;
 }
+//BODY THIRD
 .BodyThird span{
     margin-top: 100px;
     display: flex;
@@ -311,13 +313,14 @@ p{
     align-items: center;
     
 }
+
 .imagecontains{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
-.imagePeople{
+.imagePeople1{
     background-image: url("./src/components/img/testimonials-1.jpg");
     width: 120px;
     height: 120px;
@@ -326,7 +329,51 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 70px;
+    margin-bottom: 60px;
+}
+.imagePeople2{
+    background-image: url("./src/components/img/testimonials-2.jpg");
+    width: 120px;
+    height: 120px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+}
+.imagePeople3{
+    background-image: url("./src/components/img/testimonials-3.jpg");
+    width: 120px;
+    height: 120px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+}
+.imagePeople4{
+    background-image: url("./src/components/img/testimonials-4.jpg");
+    width: 120px;
+    height: 120px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 150px;
+}
+.imagePeople5{
+    background-image: url("./src/components/img/testimonials-5.jpg");
+    width: 120px;
+    height: 120px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
 }
 .imagePeopleText span{
     display: flex;
@@ -342,12 +389,37 @@ p{
     text-align: justify;
     
 }
+.imagePeopleText4 span{
+    display: flex;
+    font-size: 1rem;
+    width: 480px;
+    height: 270px;
+    background-color: #F6F7F8;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    margin-left: 20px;
+    padding:0 20px;
+    text-align: justify;
+    
+}
 .imagePeopleName{
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 10px;
-    margin-left: 40px; 
+    margin-left: 50px; 
+    font-weight: 800;
+    font-size: 14px;
+}
+.imagePeopleName5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 85px; 
+    font-weight: 800;
+    font-size: 14px;
 }
 
 .text-info{
@@ -366,3 +438,340 @@ p{
     border-bottom: 10px solid transparent;
     border-right:10px solid #F6F7F8; 
 }
+.slideSlider{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.bodySlickSlider .slick-dots li button::before {
+    position: absolute;
+    bottom: -25px !important;
+    display: block;
+    list-style: none;
+    text-align: center;
+    color: #fff !important;
+    border: 1px solid #2f74bb !important;
+    height: 12px !important;
+    width: 12px !important;
+    border-radius: 50%;
+    font-size: 0.05rem!important;
+
+}
+.bodySlickSlider .slick-dots li.slick-active button:before {
+    border: 1px solid #2f74bb !important;
+    border-radius: 50%;
+    height: 12px;
+    width: 12px;
+}
+.bodySlickSlider .slick-prev {
+    margin-left: 215px;
+    background-color: #fff!important;
+    position: absolute;
+     margin-top: -60px !important;
+    width: 100px !important;
+    height: 100px !important;
+    z-index: 1;
+   
+    
+}
+.bodySlickSlider .slick-prev::before{
+    font-size: 4rem !important;
+    color: #2f74bb !important;
+
+}
+.bodySlickSlider .slick-next {
+    background-color: #fff!important;
+    position: absolute;
+    right: 0;
+    top: -20px;
+    width: 100px !important;
+    height: 100px !important;
+    z-index: 1;
+    margin-right: 150px;
+    margin-top: 135px;
+    
+}
+.bodySlickSlider .slick-next::before{
+     font-size: 4rem !important;
+     color: #2f74bb !important;
+}
+.shadowBlue{
+    box-shadow: 0 10px 31px 0 rgba(6, 145, 245, 0.09);
+}
+//BODFOURTH
+.BodyFourth span{
+    margin-top: 60px;
+
+    margin-left: 20px;
+}
+.bodyFourthco{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 200px;
+    padding-right: 110px;
+}
+.bodyFourthPost{
+    display: flex;
+    max-width: 350px;
+    height: 460px;
+    text-align: justify;
+    background-color: #ededed;
+    flex-wrap: wrap;
+    border: 2px solid #fff;
+    border: 3px solid #ededed;
+    border-radius: 1%;
+}
+.bodyFourthPost:hover{
+    cursor: pointer;
+}
+.bodyFourthImg{
+    display: flex;
+    width: 335px;
+    height: 210px;
+    background-image:url("./src/components/img/bodyFourth1.jpg") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+    margin-top: 5px;
+   
+}
+
+
+.bodyFourthImg2{
+    display: flex;
+    width: 335px;
+    height: 210px;
+    background-image:url("./src/components/img/bodyFourth2.jpg") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+.bodyFourthImg3{
+    display: flex;
+    width: 335px;
+    height: 210px;
+    background-image:url("./src/components/img/bodyFourth3.jpg") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+.bodyFourthImg4{
+    display: flex;
+    width: 335px;
+    height: 210px;
+    background-image:url("./src/components/img/bodyFourth4.jpg") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+.bodyFourthImg5{
+    display: flex;
+    width: 335px;
+    height: 210px;
+    background-image:url("./src/components/img/bodyFourth5.jpg") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+.bodyFourthImg6{
+    display: flex;
+    width: 335px;
+    height: 210px;
+    background-image:url("./src/components/img/bodyFourth6.jpg") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+.bodyFourthBlog{
+    display: flex;
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-align: justify;
+    padding-left: 5px ;
+    padding-right: 60px;
+    margin-top: 5px;
+}
+.bodyFourthDate{
+    margin-top: 5px;
+    display: flex;
+    padding-left: 5px ;
+}
+.bodyFourthDes{
+    margin-top: 10px;
+    display: flex;
+    font-weight: 200;
+    padding-left: 5px ;
+    font-size: 0.9rem;
+}
+.readmore{
+    margin-top: 80px;
+    padding-left: 5px ;
+    font-weight: 600;
+}
+.readmore2{
+    margin-top: 40px;
+    padding-left: 5px ;
+    font-weight: 600;
+}
+.readmore3{
+    margin-top: 35px;
+    padding-left: 5px ;
+    font-weight: 600;
+}
+.readmore4{
+    margin-top: 85px;
+    padding-left: 5px ;
+    font-weight: 600;
+}
+.readmore5{
+    margin-top: 35px;
+    padding-left: 5px ;
+    font-weight: 600;
+}
+.bodyFourthco .slick-prev {
+    margin-left: 215px;
+    background-color: #2f74bb!important;
+    position: absolute;
+    margin-top: -270px !important;
+    width: 40px !important;
+    height: 40px !important;
+    z-index: 1;
+   border-radius: 5%;
+   margin-left: 1050px;
+    
+}
+.bodyFourthco .slick-prev::before{
+    font-size: 1.8rem !important;
+    color: #fff !important;
+
+}
+.bodyFourthco .slick-next {
+    background-color: #2f74bb !important;
+    position: absolute;
+    right: 0;
+    top: -20px;
+    width: 40px !important;
+    height:40px !important;
+    z-index: 1;
+    margin-right: 40px;
+    margin-top: -20px;
+    border-radius: 5%;
+    
+}
+.bodyFourthco .slick-next::before{
+     font-size: 1.8rem !important;
+     color: #fff !important;
+}
+.bodyFourthco .slick-dots li button::before {
+    margin-top: 10px;
+        font-size: 0.7rem;
+        color: #2f74bb;
+}
+.bodyFourthco .slick-dots li.slick-active button:before{
+    color: #2f74bb;
+}
+//bodyFifth
+.bodyFifth{
+    margin-top: 60px;
+}
+.bodyFifth span{
+    font-size: 2rem;
+}
+.bodyFifthco{
+    margin-top: 50px;
+    padding-left: 200px;
+    padding-right: 120px;
+}
+.bodyFifthImage1{
+    max-width:120px;
+    height: 110px;
+    background-image:url("./src/components/img/bodyFifth1.jpg") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    
+}
+.bodyFifthImage2{
+    max-width: 120px;
+    height: 110px;
+    background-image:url("./src/components/img/bodyFifth2.jpg") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+.bodyFifthImage3{
+    max-width: 120px;
+    height: 110px;
+    background-image:url("./src/components/img/bodyFifth3.jpg") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+.bodyFifthImage4{
+    max-width: 120px;
+    height: 110px;
+    background-image:url("./src/components/img/bodyFifth4.jpg") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bodyFifthImage5{
+    max-width: 120px;
+    height: 110px;
+    background-image:url("./src/components/img/bodyFifth5.jpg") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+.bodyFifthImage6{
+    max-width: 530px;
+    height: 80px;
+    background-image:url("./src/components/img/bodyFifth6.jpg") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+}
+.bodyFifthImage7{
+    max-width: 530px;
+    height: 70px;
+    background-image:url("./src/components/img/bodyFifth7.jpg") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+   
+}
+.bodyFifthImage8{
+    max-width: 505px;
+    height: 50px;
+    background-image:url("./src/components/img/bodyFifth8.jpg") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bodyFifthSlider .slick-dots li button::before {
+    margin-top: 10px;
+        font-size: 0.7rem;
+        margin-left: 20px;
+}
+

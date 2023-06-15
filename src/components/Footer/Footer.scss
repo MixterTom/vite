@@ -1,0 +1,135 @@
+.Footer{
+    background-image:url("./src/components/img/bg-footer.png") ;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-color: #323840;
+    width: 100%;
+    height: 350px;
+    padding: 80px;
+    padding-left: 160.4px;
+    padding-right: 160.4px;
+    margin-top: 70px;
+}
+.FooterPrice {
+    display: flex;
+    flex-direction: column;
+    margin-top: -5px;
+    width: 360px;
+    height: 280px;
+}
+.FooterPriceNEW{
+    position: relative;
+
+}
+.FooterPriceInputCurrent{
+    display: flex;
+    margin-top: 20px;
+    width:350px;
+    height: 40px;
+   
+}
+.FooterPriceInputCurrent:hover{
+    cursor: pointer;
+}
+.FooterPriceMenu{
+    background-color: #DDDDDD;
+    position: absolute;
+    margin-top: 85px;
+    width: 350px;
+    
+}
+.FooterPriceNation{
+    display: flex;
+    background-color: #ffffff59;
+    width: 330px;
+    height: 38px;
+    font-weight: 300;
+    font-size: 0.8rem;
+    padding-left: 20px;
+    align-items: center;
+}
+.FooterPriceNation:hover{
+    background-color: #3b7abe;
+    cursor: pointer;
+    color: #fff;
+}
+.FooterPrice span{
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-left: -150px;
+    margin-top: 0px;
+}
+.FooterPlace {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: flex-end;
+    align-items: flex-start;
+    margin-top: -30px;
+    margin-bottom: 83px;
+}
+.FooterPlace span{
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.FooterPlaceIcon{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+.FooterPlaceIcon span{
+    font-size: 0.8rem;
+    color: #9dadbb;
+    font-weight: 500;
+    margin-top: 2px;
+}
+.FooterSocial{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: -170px;
+    align-content: space-around;
+    align-items: flex-start;
+    margin-bottom: 50px;
+    
+}
+.FooterSocial span{
+    display: flex;
+    padding-left: 15px;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+
+}
+.FooterSocialIcon{
+    font-size: 2.2rem;
+    padding-left: 5px;
+}
+.FooterSocialIcon i{
+    color: #9dadbb;
+    font-weight: 600;
+    margin-left: 10px;
+}
+.FooterEnd{
+    background-color: #DDDDDD;
+    height: 70px;
+    display: flex;
+   color: #9dadbb;
+}
+.FooterEnd span{
+    color: #9dadbb;
+    align-items: center;
+    font-size: 0.8rem;
+    margin-left: -400px;
+}
+.hidden{
+    display: none;
+}
