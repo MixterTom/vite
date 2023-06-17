@@ -12,24 +12,31 @@
 .Head{
     display: block;
     color: var(--var-color);
-    padding-left: 404px;
+    padding-left: 160px;
     margin-top: 140px;
 }
 .bodyHeadName{
-    text-align: center;
     color: #444444;
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 500;
+    display: flex;
+    width: 600px;
+    padding-left: 43px;
 }
 .bodyHeadNameSub{
     color: #333;
-    font-weight: 450;
-    white-space: pre;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    font-size: 1.6rem;
+    width: 600px;
+    text-align: center;
 }
 .BodySecond{
     width: 100%;
     height: 100%;
     background-color: #F7F7F7;
+    z-index: 1;
 }
 span{
     margin-top: 20px;
@@ -38,10 +45,171 @@ span{
     align-items: center;
     color: #444444;
     font-size:2.7rem;
-
 }
 span:hover{
     cursor: text;
+}
+.Circle{
+    width: 350px;
+    height: 330px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    z-index: 0;
+    margin-top: 55px;
+    margin-left: 80px;
+    border: 1px dashed #fff;  
+    position: relative;
+}
+.CircleIcon:hover{
+    cursor: pointer;
+}
+.icon1{
+    position: absolute;
+    font-size: 2rem;
+    top: 168px;
+    left: -20px;
+}
+.icon2{
+    position: absolute;
+    font-size: 2rem;
+    top: 83px;
+    left: -18px;
+}
+.icon3{
+    position: absolute;
+    font-size: 2rem;
+    top: 7px;
+    left: 38px;
+
+}
+.icon4{
+    position: absolute;
+    font-size: 2rem;
+    top: -30px;
+    left: 153px;
+}
+.icon5{
+    position: absolute;
+    font-size: 2rem;
+    top: 7px;
+    right: 38px;
+}
+.icon6{
+    position: absolute;
+    font-size: 2rem;
+    top: 83px;
+    right: -18px;
+}
+.icon7{
+    
+    position: absolute;
+    font-size: 2rem;
+    top: 168px;
+    right: -20px;
+
+}
+.CircleIcon{
+    padding: 5px 11px 0px 12px;
+    background-color: #444;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    color: #fff;
+}
+.CircleIcon:hover{
+    transform: scale(1);
+    animation: heart 1s ease-in-out infinite;
+}
+@keyframes heart {
+    0%{
+        transform: scale(1);
+    }
+    60%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+.CircleHidden{
+    background-image: url("./src/components/img/headBody.png") ;
+    width: 100%;
+    height: 100px;
+    margin-top: -80px;
+    z-index: 1;
+}
+.CircleBack{
+    width: 277px;
+    height: 260px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin-top: 36px;
+    z-index: 1;
+}
+.CircleBack:hover{
+    cursor: text;
+}
+.CircleContent{
+    width: 235px;
+    height: 226px;
+    border-radius: 50%;
+    background-color: #ededed;
+    margin-top: 17px;
+    margin-left: 21px;
+
+}
+.CircleContent p{
+    font-size: 12px;
+}
+.CircleContent h4{
+    font-size: 20px;
+}
+.content-text1
+{
+    padding-top: 60px;
+    text-align: center;
+}
+.content-text1
+{
+    padding-top: 60px;
+    text-align: center;
+}
+.content-text2
+{
+    padding-top: 60px;
+    text-align: center;
+}
+.content-text3
+{
+    padding-top: 60px;
+    text-align: center;
+}
+.content-text4
+{
+    padding-top: 60px;
+    text-align: center;
+}
+.content-text5
+{
+    padding-top: 60px;
+    text-align: center;
+}
+.content-text6
+{
+    padding-top: 60px;
+    text-align: center;
+}
+.content-text7
+{
+    padding-top: 60px;
+    text-align: center;
+}
+.hidden{
+    display: none;
 }
 //body second
 .BodyImage{
@@ -51,6 +219,7 @@ span:hover{
     color: #fff;
     font-weight:400;
     margin-top: 10px;
+    z-index: 1;
 }
 .BodyImage:hover{
     cursor: pointer;
@@ -314,7 +483,31 @@ p{
     
 }
 
-.imagecontains{
+.imagecontains1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.imagecontains2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.imagecontains3{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.imagecontains4{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.imagecontains5{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -375,7 +568,60 @@ p{
     align-items: center;
     margin-bottom: 60px;
 }
-.imagePeopleText span{
+.imagePeopleText1 span{
+    display: flex;
+    font-size: 1rem;
+    width: 490px;
+    height: 180px;
+    background-color: #F6F7F8;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    margin-left: 20px;
+    padding:0 20px;
+    text-align: justify;
+    
+}
+.imagePeopleText2 span{
+    display: flex;
+    font-size: 1rem;
+    width: 490px;
+    height: 180px;
+    background-color: #F6F7F8;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    margin-left: 20px;
+    padding:0 20px;
+    text-align: justify;
+    
+}.imagePeopleText3 span{
+    display: flex;
+    font-size: 1rem;
+    width: 490px;
+    height: 180px;
+    background-color: #F6F7F8;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    margin-left: 20px;
+    padding:0 20px;
+    text-align: justify;
+    
+}.imagePeopleText4 span{
+    display: flex;
+    font-size: 1rem;
+    width: 490px;
+    height: 180px;
+    background-color: #F6F7F8;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    margin-left: 20px;
+    padding:0 20px;
+    text-align: justify;
+    
+}.imagePeopleText5 span{
     display: flex;
     font-size: 1rem;
     width: 490px;
@@ -472,7 +718,6 @@ p{
     height: 100px !important;
     z-index: 1;
    
-    
 }
 .bodySlickSlider .slick-prev::before{
     font-size: 4rem !important;
@@ -501,7 +746,6 @@ p{
 //BODFOURTH
 .BodyFourth span{
     margin-top: 60px;
-
     margin-left: 20px;
 }
 .bodyFourthco{
@@ -662,7 +906,6 @@ p{
 .bodyFourthco .slick-prev::before{
     font-size: 1.8rem !important;
     color: #fff !important;
-
 }
 .bodyFourthco .slick-next {
     background-color: #2f74bb !important;

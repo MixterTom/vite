@@ -9,15 +9,18 @@ import Body from './components/Body/Body.jsx';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import Footer from './components/Footer/Footer.jsx';
+import './components/Responsive/Responsive.scss';
+import Contact from './components/Contact/Contact.jsx';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-
     <Body>
     </Body>
     <Footer>
-      
     </Footer>
+    <Contact>
+
+    </Contact>
     <App/>
   </React.StrictMode>,
 )

@@ -31,6 +31,7 @@ function Footer() {
               }}
               readOnly
             ></input>
+            <i className="bi bi-chevron-down"></i>
           </div>
           <div className="FooterPriceMenu ">
             <div

@@ -3,13 +3,19 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 function Body() {
+  function iconShow (name){
+    const option =document.querySelector('.'+name);
+    option.classList.remove('hidden');
+  }
+  function hideShow (name){
+    const option =document.querySelector('.'+name);
+    option.classList.add('hidden');
+  }
   var settings = {
     dots: true,
     infinite: true,
     slidesToShow: 1,
-    slidesToScroll: 1,
     initialSlide: 0,
-    autoplay: true,
     speed: 500,
   };
   var settings2 = {
@@ -21,7 +27,46 @@ function Body() {
     autoplay: true,
     speed: 500,
     autoplaySpeed: 2000,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          dots: true,
+          infinite: true,
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          initialSlide: 0,
+          autoplay: true,
+          speed: 500,
+          autoplaySpeed: 2000,
+        }
+      },
+    ]
   };
+  
   return (
     <>
       <div className="bodyHead row">
@@ -33,32 +78,69 @@ function Body() {
         </div>
         <div className="Circle col-lg-6 ">
           <div>
-            <i className="bi bi-car-front"></i>
+            <i className="CircleIcon icon1 bi bi-car-front" onMouseEnter={()=>{iconShow('content-text1')}} onMouseLeave={()=>{hideShow('content-text1')}}></i>
           </div>
-          <div>
-            <i className="bi bi-bicycle"></i>
+          <div >
+            <i className="CircleIcon icon2 bi bi-bicycle" onMouseEnter={()=>{iconShow('content-text2')}} onMouseLeave={()=>{hideShow('content-text2')}}></i>
           </div>
-          <div>
-            <i className="bi bi-image"></i>
+          <div >
+            <i className="CircleIcon icon3 bi bi-image" onMouseEnter={()=>{iconShow('content-text3')}} onMouseLeave={()=>{hideShow('content-text3')}}></i>
           </div>
-          <div>
-            <i className="bi bi-people-fill"></i>
+          <div >
+            <i className="CircleIcon icon4 bi bi-file-earmark-medical" onMouseEnter={()=>{iconShow('content-text4')}} onMouseLeave={()=>{hideShow('content-text4')}}></i>
           </div>
-          <div>
-            <i className="bi bi-file-earmark-medical"></i>
+          <div >
+            <i className="CircleIcon icon5 bi bi-people-fill" onMouseEnter={()=>{iconShow('content-text5')}} onMouseLeave={()=>{hideShow('content-text5')}}></i>
           </div>
-          <div>
-            <i className="bi bi-heart"></i>
+          <div >
+            <i className="CircleIcon icon6 bi bi-heart" onMouseEnter={()=>{iconShow('content-text6')}} onMouseLeave={()=>{hideShow('content-text6')}}></i>
           </div>
-          <div>
-            <i className="bi bi-cup"></i>
+          <div >
+            <i className="CircleIcon icon7 bi bi-cup" onMouseEnter={()=>{iconShow('content-text7')}} onMouseLeave={()=>{hideShow('content-text7')}}></i>
           </div>
+          <div className="CircleBack">
+             <div className="CircleContent">
+                  <div className="content-text1 hidden">
+                      <h4>CAR for FREE</h4>
+                      <p>Drive you to the airport & back</p>
+                  </div>
+                  <div className="content-text2 hidden">
+                      <h4>Hire BIKE for FREE</h4>
+                      <p>For the Place In Saigon building residents</p>
+                  </div>
+                  <div className="content-text3 hidden">
+                      <h4>Signature PAINT as a GIFT</h4>
+                      <p>a welcome home gift</p>
+                  </div>
+                  <div className="content-text4 hidden">
+                      <h4>Our VISA EXTENSION SERVICE</h4>
+                      <p>For your convenience and saving time</p>
+                  </div>
+                  <div className="content-text5 hidden">
+                      <h4>Multinational Agent team</h4>
+                      <p>Speak English and French</p>
+                  </div>
+                  <div className="content-text6 hidden">
+                      <h4>Saigon Charity Tour</h4>
+                      <p>Opportunities to know and feel more about nature and people of the beautiful Vietnam</p>          
+                  </div>
+                  <div className="content-text7 hidden">
+                      <h4>10% discount at Place In Saigon Café</h4>
+                      <p>with 100% organic coffee & panorama rooftop view</p>
+
+                  </div> 
+             </div>
+          </div>
+          
         </div>
+      <div className="CircleHidden">
+
+      </div>
       </div>
       <div className="BodySecond">
         <span>Best Places in Saigon</span>
         <div className="BodyImage">
-          <div className="BodyImage1 col-lg-4">
+          <div className="BodyImage1 col-lg-4 ">
             <div className="BodyImage11">
               <div className="blurBackgroud"></div>
               <p style={{ width: "100%" }}>Price Residence </p>
@@ -111,8 +193,8 @@ function Body() {
           <Slider className="bodySlickSlider" {...settings}>
             <div>
               <div className="bodySlider row">
-                <div className="imagePeopleText col-lg-6">
-                  <div className="imagecontains">
+                <div className="imagePeopleText1 col-lg-6">
+                  <div className="imagecontains1">
                     <div className="imagePeople1"></div>
                     <span
                       style={{ marginLeft: "20px" }}
@@ -133,8 +215,8 @@ function Body() {
             </div>
             <div>
               <div className="bodySlider row">
-                <div className="imagePeopleText col-lg-6">
-                  <div className="imagecontains">
+                <div className="imagePeopleText2 col-lg-6">
+                  <div className="imagecontains2">
                     <div className="imagePeople2 shadowBlue"></div>
                     <span
                       style={{ marginLeft: "20px" }}
@@ -154,8 +236,8 @@ function Body() {
             </div>
             <div>
               <div className="bodySlider row">
-                <div className="imagePeopleText col-lg-6">
-                  <div className="imagecontains">
+                <div className="imagePeopleText3 col-lg-6">
+                  <div className="imagecontains3">
                     <div className="imagePeople3 shadowBlue"></div>
                     <span
                       style={{ marginLeft: "20px" }}
@@ -175,7 +257,7 @@ function Body() {
             <div>
               <div className="bodySlider row">
                 <div className="imagePeopleText4 col-lg-6">
-                  <div className="imagecontains">
+                  <div className="imagecontains4">
                     <div className="imagePeople4 shadowBlue"></div>
                     <span
                       style={{ marginLeft: "20px" }}
@@ -199,7 +281,7 @@ function Body() {
             </div>
             <div>
               <div className="bodySlider row">
-                <div className="imagePeopleText col-lg-6">
+                <div className="imagePeopleText5 col-lg-6">
                   <div className="imagecontains">
                     <div className="imagePeople5 shadowBlue"></div>
                     <span
