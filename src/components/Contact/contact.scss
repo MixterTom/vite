@@ -4,17 +4,124 @@
     right: 1%;
     z-index: 100;
 }
+.contact-social{
+    font-size: 2rem;
+    color: #fff;
+    margin-left: -133px;
+}
+.socialmain{
+    padding: 14px 11px 0px 12px;
+    background-color: #4F6ACA;
+    border-radius: 50%;
+    width: 60px;
+    height:60px;
+    display: flex;
+    justify-content: center;
+    margin-left: 176px;
+}
+.chaty{
+    display: none;
+    flex-direction: column;
+    margin-bottom: 40px;
+    width: 300px;
+    height: 100px;
+}
+.chatymess{
+    padding: 14px 11px 0px 12px;
+    background-color: #2f74bb;
+    border-radius: 50%;
+    width: 60px;
+    height:60px;
+    display: flex;
+    justify-content: center;
+}
+.socialmain:hover{
+    cursor: pointer;
+}
+.chatyapp{
+    padding: 14px 11px 0px 12px;
+    background-color: #48E670;
+    border-radius: 50%;
+    width: 60px;
+    height:60px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    margin-left: 35px;
+}
+.chatywhatapp{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    position: relative;
+}
+.chatywhatapp span::before {
+    position: absolute;
+    content: "";
+    width: 0px;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 20px solid #fff;
+    right: 145px;
+    bottom: 31px;
+}
+.chatytextfb{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-right: 40px;
+    position: relative;
+}
+.chatytextfb:hover{
+    cursor: pointer;
+}
+.chatytextfb span::before {
+    position: absolute;
+    content: "";
+    width: 0px;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 20px solid #fff;
+    right: 91px;
+    bottom: 20px;
+}
+.chatywhatapp:hover{
+    cursor: pointer;
+}
+.chatywhatapp span{
+
+    font-size: 0.8rem;
+    margin-left: 38px;
+    background-color: #fff;
+    width: 100px;
+    height: 30px;
+    border-radius: 13%;
+
+}
+.chatytextfb span{
+    margin-right: 25px;
+    font-size: 0.8rem;
+    width: 150px;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 13%;
+
+}
+
 .contact-mail{
     display: flex;
     font-size: 1rem;
     flex-direction: row;
     padding:10px;
+    margin-right: 77px;
 }
 .contact-mail-log{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 10px ;
+    margin-right: -33px ;
     background-color: #FCFCFC;
     width: 50px;
     height: 50px;
@@ -22,6 +129,7 @@
 }
 .contact-mail-log i:hover{
     color: #3073BC;
+    
     cursor: pointer;
 }
 .contact-mail-back{
@@ -42,7 +150,147 @@
     color: #3073BC;
     cursor: pointer;
 }
-.contact-mail-form{
-
+.iconmail{
+    display: flex;
+    align-items: center;
+    margin-right: 30px
+}
+.iconmail:hover{
+    cursor: pointer;
+}
+.contact-mail-form {
     background-color: #fff;
+    max-width: 255px;
+    height: 412px;
+    margin-bottom: 505px;
+    margin-left: -125px;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border: 1px solid #B0BBC0;
+    padding-right: 20px;
+    position: relative;
+    display: none;
+}
+.contact-mail-form::before{
+    content: " ";
+    position: absolute;
+    bottom: -20px;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #fff;
+    right: 35px;
+    z-index: 1;
+  
+}
+.outicon{
+    top: 0;
+    content: "";
+    position: absolute;
+    color: #fff;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3073BC;
+    font-size: 1.5rem;
+}
+.outicon:hover{
+    color: #fff!important;
+}
+
+.contact-mail-form span{
+    font-size: 1.2rem;
+    color: #000;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10px;
+}
+.contact-mail-form p{
+    font-size: 0.8rem;
+    color: #B0BBC0;
+    font-weight: 600;
+    width: 220px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.name{
+    width: 210px;
+    height: 35px;
+    border-radius: 2%;
+    border: 1px solid #B0BBC0;
+    margin: 10px;
+    font-size: 0.8rem;
+}
+.mail{
+    width: 210px;
+    height: 35px;
+    border-radius: 2%;
+    border: 1px solid #B0BBC0;
+    font-size: 0.8rem;
+    margin: 10px;
+}
+.phone{
+    width: 210px;
+    height: 35px;
+    border-radius: 2%;
+    border: 1px solid #B0BBC0;
+    font-size: 0.8rem;
+    margin: 10px;
+}
+.mess{
+    width: 210px;
+    height: 60px;
+    border: 1px solid #B0BBC0;
+    border-radius: 2%;
+    font-size: 0.8rem;
+    margin: 10px;
+}
+.btn {
+    display: inline-block;
+    width: 210px;
+    margin: 10px;
+    color: #fff;
+    text-shadow: none;
+    text-transform: capitalize;
+    line-height: 2;
+    background-color: #2f74bb;
+    border: 1px solid #2f74bb;
+    border-radius: 2px;
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        right top,
+        color-stop(50%, transparent),
+        color-stop(50%, #fff)
+    );
+    background-image: linear-gradient(to right, #fff 50%, #2f74bb 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+
+}
+
+.btn:hover {
+    background-color: transparent;
+    cursor: pointer;
+    color: #2f74bb;
+    background-position: left bottom;
+    transition: all 0.5s ease ;
+    border: 2px solid #2f74bb;
+}
+.offshow{
+    display: flex;
 }
