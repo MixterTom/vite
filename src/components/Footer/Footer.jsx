@@ -1,5 +1,7 @@
 import { useState } from "react";
 import "./Footer.scss";
+import Footer1 from "../img/bg-footer.png"
+
 function Footer() {
   const [money, setMoney] = useState("USD");
   const [show, setShow] = useState(false);
@@ -18,7 +20,7 @@ function Footer() {
   }
   return (
     <>
-      <div className="Footer row">
+      <div className="Footer row" style={{backgroundImage:`url(${Footer1})`}}>
         <div className="FooterPrice col-lg-4">
           <div className="FooterPriceNEW">
             <span>Change Your Currency</span>

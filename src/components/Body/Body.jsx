@@ -2,6 +2,33 @@ import "./bodyCss.scss";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import headbody from "../img/headBody.png";
+import circlehidden from "../img/headBody.png";
+import bodyImage11 from  "../img/bodySecond2.jpg";
+import bodyImage12 from "../img/bodySecond1.jpg";
+import bodyImage13 from "../img/bodySecond3.jpg";
+import bodyImage14 from  "../img/bodySecond4.jpg";
+import bodyImage15 from "../img/bodySecond5.jpg";
+import imagePeople1 from  "../img/testimonials-1.jpg";
+import imagePeople2 from  "../img/testimonials-2.jpg";
+import imagePeople3 from  "../img/testimonials-3.jpg";
+import imagePeople4 from  "../img/testimonials-4.jpg";
+import imagePeople5 from  "../img/testimonials-5.jpg";
+import bodyFourthImg from "../img/bodyFourth1.jpg";
+import bodyFourthImg2 from "../img/bodyFourth2.jpg";
+import bodyFourthImg3 from "../img/bodyFourth3.jpg";
+import bodyFourthImg4 from "../img/bodyFourth4.jpg";
+import bodyFourthImg5 from "../img/bodyFourth5.jpg";
+import bodyFourthImg6 from "../img/bodyFourth6.jpg";
+import bodyFifthImage1 from "../img/bodyFifth1.jpg"
+import bodyFifthImage2 from "../img/bodyFifth2.jpg"
+import bodyFifthImage3 from "../img/bodyFifth3.jpg"
+import bodyFifthImage4 from "../img/bodyFifth4.jpg"
+import bodyFifthImage5 from "../img/bodyFifth5.jpg"
+import bodyFifthImage6 from "../img/bodyFifth6.jpg"
+import bodyFifthImage7 from "../img/bodyFifth7.jpg"
+import bodyFifthImage8 from "../img/bodyFifth8.jpg"
+
 function Body() {
   function iconShow (name){
     const option =document.querySelector('.'+name);
@@ -69,7 +96,8 @@ function Body() {
   
   return (
     <>
-      <div className="bodyHead row">
+      <div className="bodyHead row" style={{backgroundImage:`url(${headbody})`}}>
+        
         <div className="Head col-lg-6">
           <div className="bodyHeadName">Be your family members in Saigon</div>
           <div className="bodyHeadNameSub">
@@ -133,7 +161,7 @@ function Body() {
           </div>
           
         </div>
-      <div className="CircleHidden">
+      <div className="CircleHidden" style={{backgroundImage:`url(${circlehidden})`}}>
 
       </div>
       </div>
@@ -141,14 +169,14 @@ function Body() {
         <span>Best Places in Saigon</span>
         <div className="BodyImage">
           <div className="BodyImage1 col-lg-4 ">
-            <div className="BodyImage11">
+            <div className="BodyImage11" style={{backgroundImage:`url(${bodyImage11})`}}>
               <div className="blurBackgroud"></div>
               <p style={{ width: "100%" }}>Price Residence </p>
               <p className="namesmall1 hideNow">
                 Connected to the high-end utilities of central HCM City area
               </p>
             </div>
-            <div className="BodyImage12">
+            <div className="BodyImage12" style={{backgroundImage: `url(${bodyImage12})`}}>
               <div className="blurBackgroud"></div>
               <p style={{ width: "100%" }}>Icon 56 </p>
               <p className="namesmall2 hideNow">
@@ -157,7 +185,7 @@ function Body() {
             </div>
           </div>
           <div className="BodyImage2 col-lg-4">
-            <div className="BodyImage13">
+            <div className="BodyImage13" style={{backgroundImage: `url(${bodyImage13})`}}>
               <div className="blurBackgroud"></div>
               <div className="BodyImageSquare">
                 <div style={{ position: "absolute", top: "16%", right: "15%" }}>
@@ -170,14 +198,14 @@ function Body() {
             </div>
           </div>
           <div className="BodyImage1 col-lg-4">
-            <div className="BodyImage14">
+            <div className="BodyImage14" style={{backgroundImage: `url(${bodyImage14})`}}>
               <div className="blurBackgroud"></div>
               <p style={{ width: "100%" }}>Vinhomes Golden River</p>
               <p className="namesmall4 hideNow">
                 ``COMING SOON! The project is at the very last step
               </p>
             </div>
-            <div className="BodyImage15">
+            <div className="BodyImage15" style={{backgroundImage: `url(${bodyImage15})`}}>
               <div className="blurBackgroud"></div>
               <p style={{ width: "100%" }}>Masteri Thao Dien</p>
               <p className="namesmall5 hideNow">
@@ -195,7 +223,7 @@ function Body() {
               <div className="bodySlider row">
                 <div className="imagePeopleText1 col-lg-6">
                   <div className="imagecontains1">
-                    <div className="imagePeople1"></div>
+                    <div className="imagePeople1" style={{backgroundImage:`url(${imagePeople1})`}}></div>
                     <span
                       style={{ marginLeft: "20px" }}
                       className="text-info shadowBlue"
@@ -217,7 +245,7 @@ function Body() {
               <div className="bodySlider row">
                 <div className="imagePeopleText2 col-lg-6">
                   <div className="imagecontains2">
-                    <div className="imagePeople2 shadowBlue"></div>
+                    <div className="imagePeople2 shadowBlue" style={{backgroundImage:`url(${imagePeople2})`}}></div>
                     <span
                       style={{ marginLeft: "20px" }}
                       className="text-info shadowBlue"
@@ -238,7 +266,7 @@ function Body() {
               <div className="bodySlider row">
                 <div className="imagePeopleText3 col-lg-6">
                   <div className="imagecontains3">
-                    <div className="imagePeople3 shadowBlue"></div>
+                    <div className="imagePeople3 shadowBlue" style={{backgroundImage:`url(${imagePeople3})`}}></div>
                     <span
                       style={{ marginLeft: "20px" }}
                       className="text-info shadowBlue"
@@ -258,7 +286,7 @@ function Body() {
               <div className="bodySlider row">
                 <div className="imagePeopleText4 col-lg-6">
                   <div className="imagecontains4">
-                    <div className="imagePeople4 shadowBlue"></div>
+                    <div className="imagePeople4 shadowBlue" style={{backgroundImage:`url(${imagePeople4})`}}></div>
                     <span
                       style={{ marginLeft: "20px" }}
                       className="text-info shadowBlue"
@@ -283,7 +311,7 @@ function Body() {
               <div className="bodySlider row">
                 <div className="imagePeopleText5 col-lg-6">
                   <div className="imagecontains">
-                    <div className="imagePeople5 shadowBlue"></div>
+                    <div className="imagePeople5 shadowBlue" style={{backgroundImage:`url(${imagePeople5})`}}></div>
                     <span
                       style={{ marginLeft: "20px" }}
                       className="text-info shadowBlue"
@@ -308,7 +336,7 @@ function Body() {
         <div className="bodyFourthco row">
           <Slider {...settings2}>
             <div className="bodyFourthPost shadowBlue">
-              <div className="bodyFourthImg"></div>
+              <div className="bodyFourthImg" style={{backgroundImage:`url(${bodyFourthImg})`}}></div>
               <div className="bodyFourthBlog">
                 The combination of charity and trekking R...
               </div>
@@ -322,7 +350,7 @@ function Body() {
               </div>
             </div>
             <div className="bodyFourthPost shadowBlue">
-              <div className="bodyFourthImg2"></div>
+              <div className="bodyFourthImg2" style={{backgroundImage:`url(${bodyFourthImg2})`}}></div>
               <div className="bodyFourthBlog">
                 Christmas, Stay Warm – Saigon Charity ...
               </div>
@@ -337,7 +365,7 @@ function Body() {
               </div>
             </div>
             <div className="bodyFourthPost shadowBlue">
-              <div className="bodyFourthImg3"></div>
+              <div className="bodyFourthImg3" style={{backgroundImage:`url(${bodyFourthImg3})`}}></div>
               <div className="bodyFourthBlog">
                 Place In Saigon Café – Place In Saigon...
               </div>
@@ -352,7 +380,7 @@ function Body() {
               </div>
             </div>
             <div className="bodyFourthPost shadowBlue">
-              <div className="bodyFourthImg4"></div>
+              <div className="bodyFourthImg4" style={{backgroundImage:`url(${bodyFourthImg4})`}}></div>
               <div className="bodyFourthBlog">
                 Saigon Charity Tour – Full Moon Dream ...
               </div>
@@ -364,7 +392,7 @@ function Body() {
               </div>
             </div>
             <div className="bodyFourthPost shadowBlue">
-              <div className="bodyFourthImg5"></div>
+              <div className="bodyFourthImg5" style={{backgroundImage:`url(${bodyFourthImg5})`}}></div>
               <div className="bodyFourthBlog">
                 Tet Trung Thu (Mid-Autumn Festival) in Vietn...
               </div>
@@ -379,7 +407,7 @@ function Body() {
               </div>
             </div>
             <div className="bodyFourthPost shadowBlue">
-              <div className="bodyFourthImg6"></div>
+              <div className="bodyFourthImg6" style={{backgroundImage:`url(${bodyFourthImg6})`}}></div>
               <div className="bodyFourthBlog">
                 Saigon Charity in Ben Tre 2017...
               </div>
@@ -399,14 +427,14 @@ function Body() {
         </span>
         <div className="bodyFifthco">
           <Slider className="bodyFifthSlider" {...settings2}>
-            <div className="bodyFifthImage1"></div>
-            <div className="bodyFifthImage2"></div>
-            <div className="bodyFifthImage3"></div>
-            <div className="bodyFifthImage4"></div>
-            <div className="bodyFifthImage5"></div>
-            <div className="bodyFifthImage6"></div>
-            <div className="bodyFifthImage7"></div>
-            <div className="bodyFifthImage8"></div>
+            <div className="bodyFifthImage1" style={{backgroundImage:`url(${bodyFifthImage1})`}}></div>
+            <div className="bodyFifthImage2"  style={{backgroundImage:`url(${bodyFifthImage2})`}}></div>
+            <div className="bodyFifthImage3"  style={{backgroundImage:`url(${bodyFifthImage3})`}}></div>
+            <div className="bodyFifthImage4"  style={{backgroundImage:`url(${bodyFifthImage4})`}}></div>
+            <div className="bodyFifthImage5"  style={{backgroundImage:`url(${bodyFifthImage5})`}}></div>
+            <div className="bodyFifthImage6"  style={{backgroundImage:`url(${bodyFifthImage6})`}}></div>
+            <div className="bodyFifthImage7"  style={{backgroundImage:`url(${bodyFifthImage7})`}}></div>
+            <div className="bodyFifthImage8"  style={{backgroundImage:`url(${bodyFifthImage8})`}}></div>
           </Slider>
         </div>
       </div>
