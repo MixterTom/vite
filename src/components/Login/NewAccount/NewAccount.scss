@@ -1,0 +1,104 @@
+.form-login {
+  height: 615px;
+  width: 760px;
+  border-radius: 10px;
+  background-color: #fff;
+  z-index: 3;
+}
+
+
+.text-login {
+  position: absolute;
+  bottom: 25px;
+  left: 45px;
+  font-size: 31px;
+  font-weight: 800;
+  color: #fff;
+  z-index: 2;
+  line-height: 1.25em;
+  right: 45px;
+}
+
+.fill-info {
+  position: relative;
+}
+
+.close-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 8px 12px;
+  font-size: 1rem;
+}
+
+.close-icon:hover {
+  cursor: pointer;
+}
+
+.signIn-text {
+  color: #333;
+  font-size: 23px;
+  line-height: 1.3em;
+  text-align: left;
+  font-weight: 700;
+  margin-bottom: 0px;
+}
+
+.submit-btn-1 {
+  cursor: pointer;
+  padding: 2px 15px;
+  color: #f3f3f3;
+  display: inline-table;
+  font-size: 14px;
+  line-height: 1.65em;
+  font-weight: 700;
+  border-color: #f3f3f3;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    color-stop(50%, transparent),
+    color-stop(50%, #f3f3f3)
+  );
+  background-image: linear-gradient(to left, #2f74bb 50%, #f3f3f3 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  border-radius: 2px;
+}
+
+.submit-btn-1:hover {
+  background-color: transparent;
+    background-position: left bottom;
+    color: #2f74bb;
+    border-color: #0073e1;
+    transition: all 300ms ease;
+}
+
+.form-info-new {
+  position: absolute;
+  top: 10%;
+  padding: 0 45px;
+}
+
+.other-option {
+  width: 100%;
+  position: absolute;
+  bottom: 6%;
+}
+
+.text-option {
+  padding-left: 30px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #333;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.text-option:hover {
+  cursor: pointer;
+  color: rgb(47, 116, 187);
+  transition-duration: 0.8s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0.5s;
+}

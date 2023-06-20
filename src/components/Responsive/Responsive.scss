@@ -376,3 +376,53 @@ flex-wrap: wrap;
     padding-left: 21px;
 }
 }
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+.forPhone{
+    display: none;
+}
+
+.forIpad{
+    display: none;
+}
+
+
+
+
+@media screen and (max-width: 375px) {
+    .notForPhone{
+        display: none;
+    }
+
+    .forPhone{
+        display: block;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 378px) and (max-width: 768px){
+    .notForIpad{
+        display: none;
+    }
+
+    .notForPhone{
+        display: none;
+    }
+
+    .forPhone{
+        display: block;
+        width: 100%;
+    }
+
+    .forIpad{
+        display: block;
+        width: 100%;
+    }
+
+}
+
+

@@ -23,7 +23,7 @@ function Footer() {
       <div className="Footer row" style={{backgroundImage:`url(${Footer1})`}}>
         <div className="FooterPrice col-lg-4">
           <div className="FooterPriceNEW">
-            <span>Change Your Currency</span>
+            <span className="SPANBEST">Change Your Currency</span>
             <input
               className="FooterPriceInputCurrent"
               placeholder="USD"

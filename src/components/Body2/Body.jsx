@@ -20,14 +20,14 @@ import bodyFourthImg3 from "../img/bodyFourth3.jpg";
 import bodyFourthImg4 from "../img/bodyFourth4.jpg";
 import bodyFourthImg5 from "../img/bodyFourth5.jpg";
 import bodyFourthImg6 from "../img/bodyFourth6.jpg";
-import bodyFifthImage1 from "../img/bodyFifth1.jpg"
-import bodyFifthImage2 from "../img/bodyFifth2.jpg"
-import bodyFifthImage3 from "../img/bodyFifth3.jpg"
-import bodyFifthImage4 from "../img/bodyFifth4.jpg"
-import bodyFifthImage5 from "../img/bodyFifth5.jpg"
-import bodyFifthImage6 from "../img/bodyFifth6.jpg"
-import bodyFifthImage7 from "../img/bodyFifth7.jpg"
-import bodyFifthImage8 from "../img/bodyFifth8.jpg"
+import bodyFifthImage1 from "../img/bodyFifth1.jpg";
+import bodyFifthImage2 from "../img/bodyFifth2.jpg";
+import bodyFifthImage3 from "../img/bodyFifth3.jpg";
+import bodyFifthImage4 from "../img/bodyFifth4.jpg";
+import bodyFifthImage5 from "../img/bodyFifth5.jpg";
+import bodyFifthImage6 from "../img/bodyFifth6.jpg";
+import bodyFifthImage7 from "../img/bodyFifth7.jpg";
+import bodyFifthImage8 from "../img/bodyFifth8.jpg";
 
 function Body() {
   function iconShow (name){
@@ -166,7 +166,7 @@ function Body() {
       </div>
       </div>
       <div className="BodySecond">
-        <span>Best Places in Saigon</span>
+        <span className="SPANBEST">Best Places in Saigon</span>
         <div className="BodyImage">
           <div className="BodyImage1 col-lg-4 ">
             <div className="BodyImage11" style={{backgroundImage:`url(${bodyImage11})`}}>
@@ -216,7 +216,7 @@ function Body() {
         </div>
       </div>
       <div className="BodyThird">
-        <span>TESTIMONIALS</span>
+        <span className="SPANBEST">TESTIMONIALS</span>
         <div>
           <Slider className="bodySlickSlider" {...settings}>
             <div>
@@ -332,7 +332,7 @@ function Body() {
         </div>
       </div>
       <div className="BodyFourth">
-        <span>OUR LATEST BLOGS</span>
+        <span className="SPANBEST">OUR LATEST BLOGS</span>
         <div className="bodyFourthco row">
           <Slider {...settings2}>
             <div className="bodyFourthPost shadowBlue">
@@ -422,19 +422,35 @@ function Body() {
         </div>
       </div>
       <div className="bodyFifth">
-        <span>
+        <span className="SPANBEST">
           We would like to thank our partners for all of their support
         </span>
         <div className="bodyFifthco">
           <Slider className="bodyFifthSlider" {...settings2}>
-            <div className="bodyFifthImage1" style={{backgroundImage:`url(${bodyFifthImage1})`}}></div>
-            <div className="bodyFifthImage2"  style={{backgroundImage:`url(${bodyFifthImage2})`}}></div>
-            <div className="bodyFifthImage3"  style={{backgroundImage:`url(${bodyFifthImage3})`}}></div>
-            <div className="bodyFifthImage4"  style={{backgroundImage:`url(${bodyFifthImage4})`}}></div>
-            <div className="bodyFifthImage5"  style={{backgroundImage:`url(${bodyFifthImage5})`}}></div>
-            <div className="bodyFifthImage6"  style={{backgroundImage:`url(${bodyFifthImage6})`}}></div>
-            <div className="bodyFifthImage7"  style={{backgroundImage:`url(${bodyFifthImage7})`}}></div>
-            <div className="bodyFifthImage8"  style={{backgroundImage:`url(${bodyFifthImage8})`}}></div>
+            <div className="bodyFifthImage1"  >
+              <div className="bodyFifthImage1" style={{backgroundImage:`url(${bodyFifthImage1})`}}></div>
+            </div>
+            <div className="bodyFifthImage2">
+            <div className="bodyFifthImage2" style={{backgroundImage:`url(${bodyFifthImage2})`}}></div>
+            </div>
+            <div className="bodyFifthImage3">
+            <div className="bodyFifthImage3" style={{backgroundImage:`url(${bodyFifthImage3})`}}></div>
+            </div>
+            <div className="bodyFifthImage4">
+            <div className="bodyFifthImage4" style={{backgroundImage:`url(${bodyFifthImage4})`}}></div>
+            </div>
+            <div className="bodyFifthImage5">
+            <div className="bodyFifthImage5" style={{backgroundImage:`url(${bodyFifthImage5})`}}></div>
+            </div>
+            <div className="bodyFifthImage6">
+            <div className="bodyFifthImage6" style={{backgroundImage:`url(${bodyFifthImage6})`}}></div>
+            </div>
+            <div className="bodyFifthImage7">
+            <div className="bodyFifthImage7" style={{backgroundImage:`url(${bodyFifthImage7})`}}></div>
+            </div>
+            <div className="bodyFifthImage8">
+            <div className="bodyFifthImage8" style={{backgroundImage:`url(${bodyFifthImage8})`}}></div>
+            </div>
           </Slider>
         </div>
       </div>
