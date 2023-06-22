@@ -9,25 +9,44 @@ export default function NewAccount() {
   const [password,setPassword] = useState("");
   const [username,setUserName] = useState("");
   const [type,setType] = useState("");
+  const [data,setData] = useState("");
 
   function Register(e){ 
     console.log(email,password,username,type);
     e.preventDefault();
    try{
        axios.post(`http://192.168.1.35:3000/users/register`,{email,password,username,type})
+       .then(res=>{
+        setData(res.data);
+        console.log(data);
+
+       })
    }
    catch(error){
     console.log(error);
    }
 }
+  function showRegister(){
+    if(data.status == false)
+    {
+        return(
+          <div  style={{backgroundColor: "red", width:"70%",paddingBottom:"1px",marginLeft:"12px"}}> {data.message}</div>
+        )
+    }else{
+      <div style={{backgroundColor:"green", width:"70%",paddingBottom:"1px",marginLeft:"12px"}}>{data.message}</div>
+    }
+  }
   return (
     <>
       <div className="row form-info-new">
         <p className="signIn-text" style={{ paddingBottom: "30px" }}>
           Create an account
         </p>
+        {
+          showRegister()
+        }
         <form onSubmit={(e)=>{Register(e)}} action="#" style={{ display: "flex", flexWrap: "wrap" }}>
-          <input onChange={(e)=>{setUserName(e.target.value)}} className="input-box" type="text" placeholder="Username" />
+          <input onChange={(e)=>{setUserName(e.target.value);setData("")}} className="input-box" type="text" placeholder="Username" />
           <input onChange={(e)=>{setEmail(e.target.value)}} className="input-box" type="email" placeholder="Email" />
           <input onChange={(e)=>{setPassword(e.target.value)}} className="input-box" type="password" placeholder="Password" />
           <input
