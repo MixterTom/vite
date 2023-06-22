@@ -1,26 +1,41 @@
 import "./NewAccount.scss";
 import { LoginContext } from "../../../../utils/LoginContect";
-import { useContext } from "react";
+import { useContext, useState } from "react";
+import axios from 'axios';
 
 export default function NewAccount() {
-  const type = useContext(LoginContext);
+  const type1 = useContext(LoginContext);
+  const [email,setEmail] = useState("");
+  const [password,setPassword] = useState("");
+  const [username,setUserName] = useState("");
+  const [type,setType] = useState("");
 
+  function Register(e){ 
+    console.log(email,password,username,type);
+    e.preventDefault();
+   try{
+       axios.post(`http://192.168.1.35:3000/users/register`,{email,password,username,type})
+   }
+   catch(error){
+    console.log(error);
+   }
+}
   return (
     <>
       <div className="row form-info-new">
         <p className="signIn-text" style={{ paddingBottom: "30px" }}>
           Create an account
         </p>
-        <form action="#" style={{ display: "flex", flexWrap: "wrap" }}>
-          <input className="input-box" type="text" placeholder="Username" />
-          <input className="input-box" type="text" placeholder="Email" />
-          <input className="input-box" type="password" placeholder="Password" />
+        <form onSubmit={(e)=>{Register(e)}} action="#" style={{ display: "flex", flexWrap: "wrap" }}>
+          <input onChange={(e)=>{setUserName(e.target.value)}} className="input-box" type="text" placeholder="Username" />
+          <input onChange={(e)=>{setEmail(e.target.value)}} className="input-box" type="email" placeholder="Email" />
+          <input onChange={(e)=>{setPassword(e.target.value)}} className="input-box" type="password" placeholder="Password" />
           <input
             className="input-box"
             type="password"
             placeholder="Retype Password"
           />
-          <select name="user-type" className="input-box" id="">
+          <select name="user-type" className="input-box" id="" onChange={(e)=>{setType(e.target.value)}}>
             <option value="">Select User Type</option>
             <option value="User">User</option>
             <option value="Agency">Agency</option>
@@ -43,7 +58,7 @@ export default function NewAccount() {
         <div
           className="col-lg-6 col-auto"
           onClick={() => {
-            type.toggleType("login");
+            type1.toggleType("login");
           }}
         >
           <a className="text-option">Back to login!</a>
@@ -52,7 +67,7 @@ export default function NewAccount() {
           <a
             className="text-option"
             onClick={() => {
-              type.toggleType("reset");
+              type1.toggleType("reset");
             }}
           >
             Forgot password?
