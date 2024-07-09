@@ -445,9 +445,6 @@ function Body() {
             <div className="bodyFifthImage6">
             <div className="bodyFifthImage6" style={{backgroundImage:`url(${bodyFifthImage6})`}}></div>
             </div>
-            <div className="bodyFifthImage7">
-            <div className="bodyFifthImage7" style={{backgroundImage:`url(${bodyFifthImage7})`}}></div>
-            </div>
             <div className="bodyFifthImage8">
             <div className="bodyFifthImage8" style={{backgroundImage:`url(${bodyFifthImage8})`}}></div>
             </div>
